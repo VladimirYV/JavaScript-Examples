@@ -1,0 +1,26 @@
+<html>
+<head>
+  <title>Типы данных</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+  
+  <script type="text/javascript">
+    displayItems("Собака", "Кошка", "Пони", "Хомяк", "Черепаха")
+    function displayItems()
+    {
+    for (j = 0 ; j < displayItems.arguments.length ; ++j)
+    document.write(displayItems.arguments[j] + "<br>")
+    }
+
+    document.write(fixNames("the", "DALLAS", "CowBoys"))
+function fixNames()
+{
+var s = ""
+for (j = 0 ; j < fixNames.arguments.length ; ++j)
+s += fixNames.arguments[j].charAt(0).toUpperCase() + fixNames.arguments[j].substr(1).toLowerCase() + " "
+return s.substr(0, s.length-1)
+}
+  </script>
+</body>
+</html>
