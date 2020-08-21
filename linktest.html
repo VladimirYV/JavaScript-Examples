@@ -1,0 +1,45 @@
+<html>
+<head>
+  <title>Тестирование ссылки</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+  <a id="mylink" href="http://mysite.com">Щелкни</a><br>
+  <script type="text/javascript">
+    url = document.getElementById('mylink').href
+    document.write('URL-адрес — ' + url   +  '<br>')
+
+    numlinks = document.links.length
+    document.write(numlinks +  '<br>')
+
+    month = "July"
+if (month == "July") document.write("It's the Fall" +  '<br>')
+
+string = "Шустрая бурая лисица перепрыгивает через ленивую собаку"
+with (string)
+{
+document.write("В строке " + length + " символов <br>")
+document.write("В верхнем регистре: " + toUpperCase() +  '<br>')
+}
+  </script>
+
+<script>
+  onerror = errorHandler
+  document.write("Добро пожаловать на этот сайт!") // Преднамеренная ошибка
+  function errorHandler(message, url, line)
+  {
+  out = "К сожалению, обнаружена ошибка.\n\n";
+  out += "Ошибка: " + message + "\n";
+  out += "URL: " + url + "\n";
+  out += "Строка: " + line + "\n\n";
+  out += "Щелкните на кнопке OK для продолжения работы.\n\n";
+  alert(out);
+  return true;
+  }
+
+  a = 5
+  document.write(a <= 5 ? "a меньше или равно 5" : "a больше 5")
+  </script>
+
+</body>
+</html>
