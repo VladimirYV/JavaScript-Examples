@@ -9,7 +9,7 @@
 
 details = new User("Wolfgang", "w.a.mozart", "composer")
 
-details.greeting = "Привет!<br>"
+User.prototype.greeting = "Привет "
 document.write(details.greeting)
 
 details.showUser()
@@ -21,7 +21,7 @@ this.forename = forename
 this.username = username
 this.password = password
 
-this.showUser = function()
+User.prototype.showUser = function()
 {
 document.write("Имя: " + this.forename + "<br>")
 document.write("Пользовательское имя: " + this.username + "<br>")
