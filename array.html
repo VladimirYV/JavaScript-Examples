@@ -1,0 +1,48 @@
+<html>
+<head>
+  <title>Класс</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+  
+<script type="text/javascript">
+
+numbers = []
+numbers.push("Один")
+numbers.push("Два")
+numbers.push("Три")
+for (j = 0 ; j < numbers.length ; ++j)
+document.write("Элемент " + j + " = " + numbers[j] + "<br>")
+
+balls = {"гольф": "Мячи для гольфа, 6",
+"теннис": "Мячи для тенниса, 3",
+"футбол": "Футбольный мяч, 1",
+"пинг-понг": "Мячи для пинг-понга, 12 шт."}
+for (ball in balls)
+document.write(ball + " = " + balls[ball] + "<br>")
+document.write(balls['футбол'])
+
+checkerboard = Array(
+Array(' ', 'o', ' ', 'o', ' ', 'o', ' ', 'o'),
+Array('o', ' ', 'o', ' ', 'o', ' ', 'o', ' '),
+Array(' ', 'o', ' ', 'o', ' ', 'o', ' ', 'o'),
+Array(' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '),
+Array(' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '),
+Array('O', ' ', 'O', ' ', 'O', ' ', 'O', ' '),
+Array(' ', 'O', ' ', 'O', ' ', 'O', ' ', 'O'),
+Array('O', ' ', 'O', ' ', 'O', ' ', 'O', ' '))
+document.write("<pre>")
+for (j = 0 ; j < 8 ; ++j)
+{
+for (k = 0 ; k < 8 ; ++k)
+document.write(checkerboard[j][k] + " ")
+document.write("<br>")
+}
+document.write("</pre>")
+
+fruit = ["Банан", "Виноград"]
+veg = ["Морковь", "Капуста"]
+document.write(fruit.concat(veg))
+</script>
+</body>
+</html>
