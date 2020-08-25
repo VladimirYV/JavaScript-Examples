@@ -54,6 +54,19 @@ element + "<br>")
 }
 
 for (j = 0 ; j < pets.length ; ++j) output(pets[j], j)
+
+sports = ["Футбол", "Теннис", "Бейсбол"]
+document.write("Изначально = " + sports + "<br>")
+sports.push("Hockey")
+document.write("После вставки = " + sports + "<br>")
+removed = sports.pop()
+document.write("После удаления = " + sports + "<br>")
+document.write("Удаленный элемент = " + removed + "<br>")
+
+
+sports = ["Футбол", "Теннис", "Бейсбол", "Хоккей"]
+sports.reverse()
+document.write(sports)
 </script>
 </body>
 </html>
